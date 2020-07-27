@@ -46,11 +46,15 @@ export type CoinpaymentsRenameTagResponse = []
 export type CoinpaymentsUpdateTagProfileResponse = []
 
 export interface CoinpaymentsGetDepositAddressResponse {
-  address: string
+  address: string,
+  pubkey: string,
+  dest_tag: number | string
 }
 
 export interface CoinpaymentsGetCallbackAddressResponse {
-  address: string
+  address: string,
+  pubkey: string,
+  dest_tag: number | string
 }
 
 export interface CoinpaymentsRatesResponse {
